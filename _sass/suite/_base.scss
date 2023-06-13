@@ -8,6 +8,51 @@ body {
     color: #fafafa;
 }
 
+a {
+    color: #FFB900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+blockquote {
+    margin-left: unset;
+    margin-right: unset;
+    border-left: 4px solid #424242;
+    padding-left: 1em;
+}
+
+table {
+    width: 100%;
+    background: #212121;
+    border: 1px solid #424242;
+    color: #fafafa;
+    border-radius: 8px;
+    border-collapse: collapse;
+
+    tr {
+        border: none;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+        
+    th {
+        background: #424242;
+        border: none;
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid #424242;
+        border-collapse: collapse;
+    }
+}
+
 .label {
     background: #424242;
     border: 2px solid;
@@ -40,6 +85,7 @@ body > nav {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     ul {
         display: flex;
@@ -60,7 +106,7 @@ body > nav {
                 padding: 8px 12px;
                 border: 2px solid #424242;
                 border-radius: 6px;
-                transition: background-color .05s, color .05s;
+                transition: background-color .1s, color .1s;
 
                 &:hover {
                     background: #fafafa;
@@ -77,6 +123,39 @@ body > nav {
             }
         }
     }
+}
+
+body > footer {
+    border-top: 1px solid #424242;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: smaller;
+    margin-top: 0.5em;
+
+    .nz {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+}
+
+.note {
+    margin: 1em 0;
+    padding: 8px 12px;
+    padding-left: calc(12px - 4px);
+    background: #616161;
+    color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-left: 4px solid #03A9F4;
+
+    // &.note-yellow {
+    //     background-color: #E65100;
+    //     color: #FFF8E1;
+    // }
 }
 
 .project-grid {
@@ -101,6 +180,7 @@ body > nav {
         border-radius: 8px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         transition: transform .2s, color .2s, background-color .2s;
+        border: 1px solid rgba(255, 255, 255, 0.125);
 
         &:hover {
             background: #fafafa;
