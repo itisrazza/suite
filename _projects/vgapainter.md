@@ -12,7 +12,6 @@ urls:
     url: https://github.com/thegreatrazz/VGAPainter/releases
   - label: GitHub
     url: https://github.com/thegreatrazz/VGAPainter
-external_url: https://itisrazza.github.io/VGAPainter
 
 layout: project
 ---
